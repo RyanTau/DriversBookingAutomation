@@ -10,6 +10,6 @@ unzip the file
 USEAGE:
 
 cd DriversBookingAutomation
-python DriversBookingAutomation 1234567 password instagram_login instagram_password  /Downloads/Directory_to_chrome_driver
+python DriversBookingAutomation driver_license_number service_nsw_password instagram_login instagram_password  /Downloads/Directory_to_chrome_driver
 
 
