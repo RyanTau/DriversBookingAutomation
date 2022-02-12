@@ -4,9 +4,8 @@ from selenium.webdriver.common.keys import Keys
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
-def sendmsg(text):
+def sendmsg(text,usr, pwd, PATH):
     #enter path to chrome driver where ever you download it to
-    PATH = r"C:\Users\Downloads\chromedriver_win32\chromedriver.exe"
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(PATH, options=options)
 
@@ -19,10 +18,9 @@ def sendmsg(text):
     username.clear()  
     password.clear()
     #enter instagram username and password
-    username = "kkkkk"
-    passwd = "jjjjjj"
-    username.send_keys(username)
-    password.send_keys(passwd)
+
+    username.send_keys(usr)
+    password.send_keys(pwd)
     password.send_keys(Keys.RETURN)
 
     time.sleep(5)
